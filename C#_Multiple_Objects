@@ -1,0 +1,42 @@
+C# Multiple Classes and Objects
+Multiple Objects
+You can create multiple objects of one class:
+
+Example
+Create two objects of Car:
+
+class Car
+{
+  string color = "red";
+  static void Main(string[] args)
+  {
+    Car myObj1 = new Car();
+    Car myObj2 = new Car();
+    Console.WriteLine(myObj1.color);
+    Console.WriteLine(myObj2.color);
+  }
+} 
+ 
+
+Using Multiple Classes
+You can also create an object of a class and access it in another class. This is often used for better organization of classes (one class has all the 
+fields and methods,while the other class holds the Main() method (code to be executed)).
+
+prog2.cs
+prog.cs
+prog2.cs
+class Car 
+{
+  public string color = "red";
+}
+prog.cs
+class Program
+{
+  static void Main(string[] args)
+  {
+    Car myObj = new Car();
+    Console.WriteLine(myObj.color);
+  }
+}
+
+Did you notice the public keyword? It is called an access modifier, which specifies that the color variable/field of Car is accessible for other classes as well, such as Program.
