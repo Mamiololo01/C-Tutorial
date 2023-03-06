@@ -1,0 +1,54 @@
+Return Values
+In the previous page, we used the void keyword in all examples, which indicates that the method should not return a value.
+
+If you want the method to return a value, you can use a primitive data type (such as int or double) instead of void, and use the return keyword inside the method:
+
+Example
+static int MyMethod(int x) 
+{
+  return 5 + x;
+}
+
+static void Main(string[] args)
+{
+  Console.WriteLine(MyMethod(3));
+}
+
+// Outputs 8 (5 + 3)
+ 
+ 
+ 
+
+This example returns the sum of a method's two parameters:
+
+Example
+static int MyMethod(int x, int y) 
+{
+  return x + y;
+}
+
+static void Main(string[] args)
+{
+  Console.WriteLine(MyMethod(5, 3));
+}
+
+// Outputs 8 (5 + 3)
+ 
+ 
+ 
+
+You can also store the result in a variable (recommended, as it is easier to read and maintain):
+
+Example
+static int MyMethod(int x, int y) 
+{
+  return x + y;
+}
+
+static void Main(string[] args)
+{
+  int z = MyMethod(5, 3);
+  Console.WriteLine(z);
+}
+
+// Outputs 8 (5 + 3)
