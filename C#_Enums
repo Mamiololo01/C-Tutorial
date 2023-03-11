@@ -1,0 +1,39 @@
+C# Enums
+An enum is a special "class" that represents a group of constants (unchangeable/read-only variables).
+
+To create an enum, use the enum keyword (instead of class or interface), and separate the enum items with a comma:
+
+Example
+enum Level 
+{
+  Low,
+  Medium,
+  High
+}
+You can access enum items with the dot syntax:
+
+Level myVar = Level.Medium;
+Console.WriteLine(myVar);
+Enum is short for "enumerations", which means "specifically listed".
+
+Enum inside a Class
+You can also have an enum inside a class:
+
+Example
+class Program
+{
+  enum Level
+  {
+    Low,
+    Medium,
+    High
+  }
+  static void Main(string[] args)
+  {
+    Level myVar = Level.Medium;
+    Console.WriteLine(myVar);
+  }
+}
+The output will be:
+
+Medium
